@@ -1,0 +1,171 @@
+[33m717fb94[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mceysor[m[33m)[m feat: was
+[33m65404f9[m feat: making relations
+[33mba88959[m feat: uploading files
+[33mda86621[m[33m ([m[1;31morigin/ceysor-ok[m[33m, [m[1;31morigin/ceysor[m[33m, [m[1;32mceysor-ok[m[33m)[m feat: downloading csv
+[33m80a4f1b[m feat: showing indexs
+[33m653aac3[m feat: master table finished
+[33m2ff12d6[m feat: changing views
+[33m608bcfc[m feat: adding radio buttons
+[33m269e57e[m feat: adding filters
+[33m7879890[m feat: generate excel on master table
+[33md041b2a[m feat: setting notes for approved or denied
+[33mafbf5d9[m feat: updating resolution field for process
+[33mb1d1523[m[33m ([m[1;31morigin/carriers[m[33m, [m[1;32mcarriers[m[33m)[m Merge changes
+[33m3e0b96a[m Merge branch 'carriers' of https://github.com/Yosipmikecolin/WeSense into carriers
+[33m6bd1f52[m Settings texts
+[33m18fa1ed[m Merge pull request #3 from Yosipmikecolin/ceysor
+[33m7ea80d9[m Merge branch 'carriers' into ceysor
+[33m9eb1801[m feat: creating history view
+[33m7f5ef8d[m Settings CRS
+[33mbafc3ae[m Settings change address
+[33m999280a[m Add ley
+[33m95299fe[m feat: finishing supports
+[33m02252d3[m Settings export excel
+[33m0819243[m Settings  files
+[33m9a2310d[m fix: code
+[33mbc75627[m feat: finishing queries
+[33meb214e1[m feat:  adding tank stack query
+[33m134bd2c[m Settings requests
+[33m0367857[m feat: adding new tables
+[33m0f275d7[m feat: fixing logic
+[33m9d0c7e2[m feat: cleaning code
+[33me425dad[m fix: fixing styles
+[33m2a09259[m feat: finishing installation
+[33m3ae41bf[m feat: updating process
+[33m0082b8a[m Adjustments to the request flow
+[33mb205ac8[m feat: adding changes to process awardee
+[33m3fe7ce0[m feat: changing logic for process awardee
+[33m7943bb4[m Corrections 2
+[33m309e116[m Corrections 1
+[33mbf67341[m Corrections errors
+[33mf0b7827[m Settings wearer
+[33m4c345a5[m Settings carriers
+[33mf47ffef[m feat: crud awardee desactivation finished
+[33m34f7c41[m feat: crud awardee suport finished
+[33m4a751d8[m Adjustment in the application form
+[33m3e4f308[m feat: crud awardee alert finished
+[33m67d6545[m feat: crud awardee resolution finished
+[33m18f86f7[m feat: crud awarde instalation
+[33m0b78ad9[m feat: crud awardee reception finished
+[33m466b4c4[m Settings tables
+[33m8b60b30[m feat: crud wardee
+[33md097d3b[m Settings logOut
+[33m14325f2[m Settings
+[33m4e84000[m Merge branch 'carriers' of https://github.com/Yosipmikecolin/WeSense into carriers
+[33m25d4164[m Settings config
+[33m887830d[m Merge pull request #1 from Yosipmikecolin/ceysor
+[33mdf66687[m test
+[33m803ddfe[m Merge branch 'carriers' of https://github.com/Yosipmikecolin/WeSense into carriers
+[33ma750a4f[m Settings modal
+[33m2443c74[m feat: adding auth.logout route
+[33mfc0fda0[m feat: fixing setup.wearer.update
+[33m90de1b4[m Change new URL
+[33md352700[m Change URL
+[33m1554d1d[m Settings 1
+[33m6e12962[m Settings
+[33me2912cf[m Settings styles
+[33m18d1b47[m feat: fixing create and update
+[33m55b8f7f[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Change URL
+[33m83c983d[m Settings 7
+[33mbb5d11f[m feat: delete
+[33m53cb3be[m Settings errors
+[33m682aad9[m Settings 6
+[33m3ebf233[m Settings 5
+[33m8913120[m Settings errors 5
+[33mb04ba23[m Settings 5
+[33mb54ed50[m Settings 4
+[33m2503672[m Settings 3
+[33m0c16e4b[m Settings Eslint
+[33m2a564b4[m Corrections 3
+[33m87548be[m Corrections 2
+[33m8545522[m feat: setting update wearer
+[33m27977dc[m Corrections
+[33m73afad7[m Corrections error routes api
+[33m35d0804[m Corrections errors
+[33m243b7fd[m Settings .env
+[33m363288f[m Settings requests
+[33me2b7871[m feat: create wearer
+[33m7ec2937[m feat: validating code when login
+[33mea61166[m Adjustment in the CRUD of applicants
+[33m9d6fcc3[m feat: adding the captcha field
+[33m6889e1e[m Adjusting the CRUD of carriers
+[33md5833d5[m feat: instaling libs and creating buddie route
+[33maee2604[m Settings
+[33m68aa813[m CRUD settings for users
+[33md20e23e[m[33m ([m[1;32mmain[m[33m)[m Structuring the data
+[33md4507a9[m Adjustment on the date of the request
+[33m879eaa5[m Settings interfaces and types
+[33mee4bb63[m Settings for generating files
+[33md721c7e[m CRUD Settings for the Carrier View
+[33m61e7538[m Settings form carrier
+[33mfd7dd7f[m Settings
+[33m4e19204[m Adjusting the CRUD of the requester view
+[33ma6bd7c6[m User view CRUD completed
+[33mb577e66[m Settings
+[33meebc3bd[m Change icons
+[33mb53efeb[m Correction any
+[33mafc94d7[m Settings
+[33m7b37e25[m New contract view settings
+[33m6f6ef4d[m Settings views
+[33m056d9a1[m New view created
+[33m2fea1ff[m Settings
+[33mcbff6f9[m Settings
+[33mde88d64[m Settings form
+[33m97d8775[m Update of the carrier list
+[33m68be985[m Setting up the technical feasibility request form
+[33mfa0bb91[m Settings timeline
+[33mf8a0ada[m Settings views
+[33m0c827d0[m Settings errors
+[33meccddf4[m Settings files modals
+[33m4fd11ff[m Adjustments to carrier details
+[33mfc96631[m Settings reports
+[33m714c8a0[m Settings titles
+[33mb299065[m Settings
+[33mf821d92[m Creating the report view
+[33mab33ea7[m Adjustment in requirements modal
+[33mf153a35[m Carrier Modal Adjustments
+[33mb628081[m Settings in the process table
+[33m0dee025[m Settings data tables
+[33m4ecf575[m Creation of the Scheduling view and execution of processes
+[33m3a55203[m Settings in awardee
+[33m5c08348[m Settings send email
+[33mf1ca995[m Button send
+[33m66c1fc1[m Change icon
+[33m21d0201[m Settings map
+[33mc92ab34[m Change 5
+[33ma622db5[m Change 4
+[33m67a0515[m Change 3
+[33m6bd84ff[m Change 2
+[33mcb32020[m Change 1
+[33mf83a725[m Settings
+[33m2d4edee[m Settings
+[33m0223925[m Settings
+[33me39ff45[m Correction form
+[33me36de5e[m Settings client
+[33meae38e1[m Settings Eslint
+[33m8b4e93d[m Correction hook toast
+[33m53d57f4[m Settings
+[33mf53b3cf[m Correcion errors 2
+[33m2d5c35a[m Correcions errors Eslint
+[33m12c78c3[m Corrections
+[33mba10221[m Settings table
+[33m9b6851d[m Settings table request
+[33ma8dd2f0[m Adjustments in the create request form
+[33m4292ce4[m Request view settings
+[33m60ccdd1[m Created Workload View
+[33m61d9b1e[m View Component Settings
+[33mf8a7167[m Color and icon adjustments
+[33m39ae4c5[m Table settings
+[33m6d92773[m Request table settings
+[33m40eeefe[m Map creation and settings
+[33m3bc00cb[m Request table settings
+[33me29ab99[m Creating the Requests View
+[33m293dc9f[m Forms settings and creating the create request view
+[33m3d84f98[m Settings
+[33mfc2c949[m Forms view settings
+[33m780d54a[m Adjusting folder names
+[33m54a6a7a[m Settings tables
+[33mf8dd924[m Structuring project
+[33maaa16e8[m Creating the profile table and adjusting it in the navbar
+[33m093b608[m Base code
+[33m008f266[m Initial commit from Create Next App

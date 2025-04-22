@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  /* padding: 0; */
+  font-family: var(--font-inter-light);
+}
+
+*::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: white; /* Color del fondo del scroll */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #c5c5c9;
+  border-radius: 5px;
+  border: 3px solid #f0f0f0;
+}
+
+@media (max-height: 800px) {
+  .modal {
+    height: 500px;
+  }
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+.loader-button {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #50e97e;
+  border-radius: 50%;
+  width: 23px;
+  height: 23px;
+  animation: spin-loader-button 1s linear infinite;
+}
+
+.loader-button-2 {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #be3d2a;
+  border-radius: 50%;
+  width: 23px;
+  height: 23px;
+  animation: spin-loader-button 1s linear infinite;
+}
+
+.loader-spiner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #50e97e;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin-loader-button 500ms linear infinite;
+}
+
+@keyframes spin-loader-button {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#radix-:r2k svg {
+  display: none;
+}

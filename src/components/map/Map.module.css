@@ -1,0 +1,54 @@
+.location-container {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none; /* Evita que interfiera con el mapa */
+}
+
+.location-dot {
+  width: 14px;
+  height: 14px;
+  background-color: rgb(10, 155, 70);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  animation: circle 1.5s infinite;
+}
+
+.location-ring {
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgb(16, 122, 60);
+  border-radius: 50%;
+  position: absolute;
+  animation: pulse 1.5s infinite;
+}
+
+.location-ring:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes circle {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
