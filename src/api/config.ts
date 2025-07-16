@@ -12,7 +12,7 @@ export const axiosConfigBuddie = wrapper(
 );
 
 export const axiosConfig = axios.create({
-  baseURL: "https://shimmering-vacherin-0a9847.netlify.app/api",
+  baseURL: process.env.NEXT_PUBLIC_URL,
 });
 
 axiosConfig.interceptors.request.use(

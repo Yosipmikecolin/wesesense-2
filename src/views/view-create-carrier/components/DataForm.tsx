@@ -62,9 +62,10 @@ const DataForm = ({ formData, setCompleteForm, setFormData }: StepProps1) => {
   }
 
   const formStarDate = (date: Date) => {
-    const dia = String(date.getDate()).padStart(2, "0");
-    const mes = String(date.getMonth() + 1).padStart(2, "0"); // +1 porque los meses van de 0 a 11
-    const anio = date.getFullYear();
+    const result = new Date(date);
+    const dia = String(result.getDate()).padStart(2, "0");
+    const mes = String(result.getMonth() + 1).padStart(2, "0"); // +1 porque los meses van de 0 a 11
+    const anio = result.getFullYear();
     return `${anio}-${mes}-${dia}`;
   };
 
