@@ -8,7 +8,6 @@ import { Input } from "../ui/input";
 import axios from "axios";
 import { useBuddieStore } from "@/store/index";
 import { toast } from "@/hooks/use-toast";
-import { getCarriersAPI } from "@/api/request";
 
 const Login = () => {
   const { setToken: setTokenBuddie } = useBuddieStore();
