@@ -29,7 +29,7 @@ const Login = () => {
     }
   }, []);
 
-  const loginBuddie = async (username: string, password: string) => {
+  /*   const loginBuddie = async (username: string, password: string) => {
     const _CAPTCHA = code;
     setCode("");
 
@@ -88,110 +88,88 @@ const Login = () => {
     }
 
     return true;
-  };
+  }; */
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (username === "administrator@gmail.com" && password === "12345") {
       setLoading(true);
-      const is_valid = await loginBuddie("colinparrado@gmail.com", "Yosip123");
+      localStorage.setItem("email", "administrator@gmail.com");
 
-      if (is_valid) {
-        localStorage.setItem("email", "administrator@gmail.com");
-        toast({
-          title: "Acceso administrador",
-          description: "administrator@gmail.com",
-        });
-        localStorage.removeItem("sesion");
-        setUrlCaptcha("");
-        navigation.push("/administrator");
-      }
+      toast({
+        title: "Acceso administrador",
+        description: "administrator@gmail.com",
+      });
+      localStorage.removeItem("sesion");
+      setUrlCaptcha("");
+      navigation.push("/administrator");
     } else if (username === "requiring@gmail.com" && password === "12345") {
       setLoading(true);
 
-      const is_valid = await loginBuddie("colinparrado@gmail.com", "Yosip123");
-
-      if (is_valid) {
-        localStorage.setItem("email", "requiring@gmail.com");
-        toast({
-          title: "Acceso requirente",
-          description: "requiring@gmail.com",
-        });
-        localStorage.removeItem("sesion");
-        setUrlCaptcha("");
-        navigation.push("/requiring");
-      }
+      localStorage.setItem("email", "requiring@gmail.com");
+      toast({
+        title: "Acceso requirente",
+        description: "requiring@gmail.com",
+      });
+      localStorage.removeItem("sesion");
+      setUrlCaptcha("");
+      navigation.push("/requiring");
     } else if (username === "coordinator@gmail.com" && password === "12345") {
       setLoading(true);
-      const is_valid = await loginBuddie("colinparrado@gmail.com", "Yosip123");
 
-      if (is_valid) {
-        localStorage.setItem("email", "coordinator@gmail.com");
-        toast({
-          title: "Acceso coordinador",
-          description: "coordinator@gmail.com",
-        });
-        localStorage.removeItem("sesion");
-        setUrlCaptcha("");
-        navigation.push("/coordinator");
-      }
+      localStorage.setItem("email", "coordinator@gmail.com");
+      toast({
+        title: "Acceso coordinador",
+        description: "coordinator@gmail.com",
+      });
+      localStorage.removeItem("sesion");
+      setUrlCaptcha("");
+      navigation.push("/coordinator");
     } else if (username === "awardee@gmail.com" && password === "12345") {
       setLoading(true);
-      const is_valid = await loginBuddie("colinparrado@gmail.com", "Yosip123");
 
-      if (is_valid) {
-        localStorage.setItem("email", "awardee@gmail.com");
-        toast({
-          title: "Acceso adjudicatorio",
-          description: "awardee@gmail.com",
-        });
-        localStorage.removeItem("sesion");
-        setUrlCaptcha("");
-        navigation.push("/awardee");
-      }
+      localStorage.setItem("email", "awardee@gmail.com");
+      toast({
+        title: "Acceso adjudicatorio",
+        description: "awardee@gmail.com",
+      });
+      localStorage.removeItem("sesion");
+      setUrlCaptcha("");
+      navigation.push("/awardee");
     } else if (username === "contract@gmail.com" && password === "12345") {
       setLoading(true);
-      const is_valid = await loginBuddie("colinparrado@gmail.com", "Yosip123");
 
-      if (is_valid) {
-        localStorage.setItem("email", "contract@gmail.com");
-        toast({
-          title: "Acceso adjudicatorio",
-          description: "contract@gmail.com",
-        });
-        localStorage.removeItem("sesion");
-        setUrlCaptcha("");
-        navigation.push("/contract");
-      }
+      localStorage.setItem("email", "contract@gmail.com");
+      toast({
+        title: "Acceso adjudicatorio",
+        description: "contract@gmail.com",
+      });
+      localStorage.removeItem("sesion");
+      setUrlCaptcha("");
+      navigation.push("/contract");
     } else if (username === "dmt@gmail.com" && password === "12345") {
       setLoading(true);
-      const is_valid = await loginBuddie("colinparrado@gmail.com", "Yosip123");
 
-      if (is_valid) {
-        localStorage.setItem("email", "dmt@gmail.com");
-        toast({
-          title: "Acceso DMT",
-          description: "dmt@gmail.com",
-        });
-        localStorage.removeItem("sesion");
-        setUrlCaptcha("");
-        navigation.push("/dmt");
-      }
+      localStorage.setItem("email", "dmt@gmail.com");
+      toast({
+        title: "Acceso DMT",
+        description: "dmt@gmail.com",
+      });
+      localStorage.removeItem("sesion");
+      setUrlCaptcha("");
+      navigation.push("/dmt");
     } else if (username === "crs@gmail.com" && password === "12345") {
       setLoading(true);
-      const is_valid = await loginBuddie("colinparrado@gmail.com", "Yosip123");
 
-      if (is_valid) {
-        localStorage.setItem("email", "crs@gmail.com");
-        toast({
-          title: "Acceso CRS",
-          description: "crs@gmail.com",
-        });
-        localStorage.removeItem("sesion");
-        setUrlCaptcha("");
-        navigation.push("/dmt");
-      }
+      localStorage.setItem("email", "crs@gmail.com");
+      toast({
+        title: "Acceso CRS",
+        description: "crs@gmail.com",
+      });
+      localStorage.removeItem("sesion");
+      setUrlCaptcha("");
+      navigation.push("/dmt");
     } else {
       toast({
         title: "Error",
@@ -203,7 +181,7 @@ const Login = () => {
 
   const getCaptcha = async () => {
     const captchaRes = await axios.get(
-      `/api/buddie?method=auth.get_captcha_details`
+      `/api/buddie?method=auth.get_captcha_details`,
     );
     setUrlCaptcha(captchaRes.data.image);
   };
@@ -261,7 +239,8 @@ const Login = () => {
                 className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-200"
               />
             </div>
-            <div className="space-y-2">
+
+            {/*             <div className="space-y-2">
               {urlCaptcha ? (
                 <div className="flex flex-col text-center">
                   <img src={urlCaptcha} alt="Captcha" />
@@ -276,6 +255,7 @@ const Login = () => {
                 <p>Loading...</p>
               )}
             </div>
+             */}
             <div className="space-y-2">
               <label
                 htmlFor="code"
