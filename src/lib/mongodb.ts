@@ -1,9 +1,8 @@
 import mongoose from "mongoose";
 
-const user = process.env.NEXT_PUBLIC_USER;
 const password = process.env.NEXT_PUBLIC_PASSWORD;
 
-const MONGODB_URI = `mongodb+srv://${user}:${password}@clusterprueba.gfcshhp.mongodb.net/?retryWrites=true&w=majority&appName=ClusterPrueba`;
+const MONGODB_URI = `mongodb://mongo:${password}@ballast.proxy.rlwy.net:14715`;
 
 declare global {
   var mongoose: {

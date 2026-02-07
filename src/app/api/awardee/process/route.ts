@@ -83,14 +83,14 @@ export async function PUT(req: Request) {
         status: body.status,
         denied_note: body.denied,
         approved_note: body.approved,
-      }
+      },
     );
     return NextResponse.json(updatedAwardee, { status: 201 });
   }
   if (_METHOD === "update.resolution") {
     const updatedAwardee = await AwardeeProcess.updateOne(
       { _id: body._id },
-      { resolution: body.resolution }
+      { resolution: body.resolution },
     );
     return NextResponse.json(updatedAwardee, { status: 201 });
   }
