@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -6,8 +5,6 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 
-import { Download } from "lucide-react";
-import { generatePDF, generateWord } from "../functions";
 import { FormDataWearer } from "@/views/view-create-carrier/interfaces";
 
 interface Props {
@@ -449,7 +446,7 @@ const DetailsModal = ({ carrier, open, onClose }: Props) => {
               </div> */}
             </div>
           </div>
-{/*           <div className="flex gap-2 mt-4">
+          {/*           <div className="flex gap-2 mt-4">
             <Button
               variant="outline"
               onClick={() => carrier && generatePDF(carrier)}

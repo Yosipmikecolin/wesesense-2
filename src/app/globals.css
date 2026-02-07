@@ -71,6 +71,5 @@
   }
 }
 
-#radix-:r2k svg {
-  display: none;
-}
+/* Removed invalid selector - use attribute selector if needed:
+   [id^="radix-"] svg { display: none; } */

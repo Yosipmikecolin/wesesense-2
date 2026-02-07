@@ -26,10 +26,10 @@ import {
 import { Info } from "lucide-react";
 import { Textarea } from "@/components/ui/textarea";
 import Image from "next/image";
-import Foto1 from "/public/foto-1.jpg";
-import Foto2 from "/public/foto-2.jpg";
-import Foto3 from "/public/foto-3.jpg";
-import Foto4 from "/public/foto-4.jpg";
+import Foto1 from "@/../public/foto-1.jpg";
+import Foto2 from "@/../public/foto-2.jpg";
+import Foto3 from "@/../public/foto-3.jpg";
+import Foto4 from "@/../public/foto-4.jpg";
 import dynamic from "next/dynamic";
 import { RequestTable } from "@/views/view-create-request/interfaces";
 import { updatedRequest } from "@/api/request";

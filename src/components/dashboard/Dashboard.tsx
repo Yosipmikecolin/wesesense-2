@@ -1,6 +1,6 @@
 "use client";
 
-import { JSX, useState } from "react";
+import { JSX, useEffect, useState } from "react";
 import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
 import Content from "./components/Content";
@@ -15,6 +15,15 @@ interface DashboardProps {
 
 const Dashboard = ({ menuItems }: DashboardProps) => {
   const [view, setView] = useState(menuItems[0].label);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <div className="flex">

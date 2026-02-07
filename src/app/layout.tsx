@@ -5,7 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import Layout from "@/layout/Layout";
 import { PrimeReactProvider } from "primereact/api";
 import "primereact/resources/themes/saga-green/theme.css";
-import 'primeicons/primeicons.css';
+import "primeicons/primeicons.css";
 
 const interLight = Inter({
   subsets: ["latin"],
@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${interLight.variable} ${interBold.variable} antialiased`}
       >
